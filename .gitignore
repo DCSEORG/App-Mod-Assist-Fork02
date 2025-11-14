@@ -77,3 +77,9 @@ publish/
 
 # Mac
 .DS_Store
+
+# Bicep generated files
+*.json
+!appsettings*.json
+!launchSettings.json
+!**/wwwroot/**/*.json
