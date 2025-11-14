@@ -1,0 +1,55 @@
+@page
+@model ExpenseManagement.Pages.ApproveExpensesModel
+@{
+    ViewData["Title"] = "Approve Expenses";
+}
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Approve Expenses</h4>
+    </div>
+    <div class="card-body" style="background-color: #d3d3d3;">
+        <div class="mb-3">
+            <strong>Pending expenses:</strong>
+        </div>
+        
+        <div class="mb-3">
+            <label class="fw-bold me-2">Filter:</label>
+            <input type="text" class="form-control d-inline-block" style="width: 300px;" />
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered bg-white">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20/01/2024</td>
+                        <td>Travel</td>
+                        <td>£120.00</td>
+                    </tr>
+                    <tr>
+                        <td>14/12/2023</td>
+                        <td>Office Supplies</td>
+                        <td>£99.50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="text-center mt-3">
+            <button type="button" class="btn btn-secondary px-5">Approve</button>
+        </div>
+    </div>
+</div>
