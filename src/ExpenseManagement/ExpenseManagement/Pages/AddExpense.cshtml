@@ -1,0 +1,53 @@
+@page
+@model ExpenseManagement.Pages.AddExpenseModel
+@{
+    ViewData["Title"] = "Add Expense";
+}
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Add Expense</h4>
+    </div>
+    <div class="card-body" style="background-color: #d3d3d3;">
+        <form method="post">
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label fw-bold">Amount:</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" asp-for="Amount" step="0.01" />
+                </div>
+            </div>
+            
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label fw-bold">Date:</label>
+                <div class="col-sm-6">
+                    <input type="date" class="form-control" asp-for="Date" />
+                </div>
+            </div>
+            
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label fw-bold">Category:</label>
+                <div class="col-sm-6">
+                    <select class="form-select" asp-for="Category">
+                        <option value="Travel">Travel</option>
+                        <option value="Food">Food</option>
+                        <option value="Office Supplies">Office Supplies</option>
+                        <option value="Transport">Transport</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label fw-bold">Description:</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" asp-for="Description" rows="4"></textarea>
+                </div>
+            </div>
+            
+            <div class="mb-3 row">
+                <div class="col-sm-9 text-center">
+                    <button type="submit" class="btn btn-secondary px-5">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+@page
+@model ExpenseManagement.Pages.ExpensesModel
+@{
+    ViewData["Title"] = "Expenses";
+}
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Expenses</h4>
+    </div>
+    <div class="card-body" style="background-color: #d3d3d3;">
+        <div class="mb-3">
+            <label class="fw-bold me-2">Filter:</label>
+            <input type="text" class="form-control d-inline-block" style="width: 300px;" />
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered bg-white">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15/01/2024</td>
+                        <td>Travel</td>
+                        <td>£120.00</td>
+                        <td>Submitted</td>
+                    </tr>
+                    <tr>
+                        <td>10/01/2023</td>
+                        <td>Food</td>
+                        <td>£69.00</td>
+                        <td>Submitted</td>
+                    </tr>
+                    <tr>
+                        <td>04/12/2023</td>
+                        <td>Office Supplies</td>
+                        <td>£99.50</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>18/21/2023</td>
+                        <td>Transport</td>
+                        <td>£19.20</td>
+                        <td>Approved</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="text-center mt-3">
+            <button type="button" class="btn btn-secondary px-5">Save</button>
+        </div>
+    </div>
+</div>
